@@ -1,0 +1,20 @@
+const originalFilms = ([
+  {id: 1, title: 'aaaaa', description: 'bbbbbbb', image: hillHouseImage, category: 'Horror'},
+  {id: 2, title: 'aaaaa', description: 'bbbbbbb', image: hillHouseImage, category: 'Thriller'},
+  {id: 3, title: 'aaaaa', description: 'bbbbbbb', image: hillHouseImage, category: 'Action'},
+  {id: 4, title: 'aaaaa', description: 'bbbbbbb', image: hillHouseImage, category: 'Comedy'},
+ 
+])
+
+<Grid gap={4} mx={4} mt={4} templateColumns={{base: 'repeat(2, 1fr)', lg: 'repeat(4, 1fr)' }}>
+      {films.map(film => 
+      <GridItem 
+      key={film.id}
+      w='100%'
+      h='250px'
+      border='1px'>
+      </GridItem>
+      )}
+      </Grid>
+
+<IconButton aria-label="Go Back" icon={<ArrowBackIcon />}  />
